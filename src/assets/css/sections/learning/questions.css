@@ -1,0 +1,6 @@
+.questions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875em;
+  padding: 1.625em 0;
+}

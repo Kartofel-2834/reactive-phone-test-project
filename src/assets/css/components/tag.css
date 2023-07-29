@@ -1,0 +1,37 @@
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  width: fit-content;
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+
+.tag__icon,
+.tag__content {
+  user-select: none;
+  display: flex;
+}
+
+.tag__icon {
+  transition: inherit;
+}
+
+.tag__content {
+  font-weight: 600;
+}
+
+.tag:hover {
+  --a: white;
+  color: white;
+  background-color: var(--theme-first);
+}
+
+.tag:active {
+  opacity: 0.8;
+}

@@ -1,0 +1,48 @@
+.icon-link,
+.icon-link__icon,
+.icon-link__label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-link {
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+.icon-link__icon {
+  justify-content: center;
+  width: 3.625em;
+  height: 3.625em;
+  border-radius: 100%;
+  fill: white;
+  background-color: var(--a);
+  border: 1px solid var(--a);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.icon-link__label {
+  text-align: center;
+}
+
+.icon-link__label::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 2px;
+  margin-top: 6px;
+  background-color: var(--a);
+  transform: scaleX(0);
+  transition: 0.2s ease-in-out;
+}
+
+/* Hover */
+.icon-link:hover .icon-link__label::after {
+  transform: scaleX(1);
+}
+
+.icon-link:hover:not(:active) .icon-link__icon {
+  fill: var(--a);
+  background-color: var(--c);
+}

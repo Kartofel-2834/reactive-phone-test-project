@@ -1,0 +1,165 @@
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-ExtraBold.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Medium.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Regular.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-ExtraLight.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Thin.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+:root {
+  --red: #ff2045;
+  --red-light: #fba2b1;
+  --red-faded: #ffe9ed;
+
+  --orange: #ff7355;
+  --orange-light: #ffbfb1;
+  --orange-faded: #fff1ee;
+
+  --purple: #6b2abc;
+  --purple-light: #bc9de0;
+  --purple-faded: #f1eaf9;
+
+  --green: #52a754;
+  --green-faded: #eef7ee;
+
+  --grey: #87898f;
+
+  --back: #f9f9f9;
+}
+
+* {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+}
+
+body {
+  background-color: var(--back);
+}
+
+h1 {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--a);
+  width: fit-content;
+  margin: 0 auto;
+}
+
+h4::after {
+  content: "";
+  width: calc(100% + 4em);
+  margin-top: 0.875em;
+  height: 2px;
+  background-color: var(--a);
+}
+
+a {
+  appearance: none;
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+
+span {
+  color: inherit;
+  font-family: inherit;
+}
+
+path {
+  transition: 0.2s ease-in-out;
+}
+
+.red {
+  --theme-first: var(--red);
+  --theme-second: var(--red-light);
+  --theme-third: var(--red-faded);
+
+  --a: var(--red);
+  --b: var(--red-light);
+  --c: var(--red-faded);
+}
+
+.orange {
+  --theme-first: var(--orange);
+  --theme-second: var(--orange-light);
+  --theme-third: var(--orange-faded);
+
+  --a: var(--orange);
+  --b: var(--orange-light);
+  --c: var(--orange-faded);
+}
+
+.purple {
+  --theme-first: var(--purple);
+  --theme-second: var(--purple-light);
+  --theme-third: var(--purple-faded);
+
+  --a: var(--purple);
+  --b: var(--purple-light);
+  --c: var(--purple-faded);
+}
+
+#app {
+  width: 360px;
+  margin: 0 auto;
+  padding: 4em 1em 0 1em;
+  border: 1px solid;
+}

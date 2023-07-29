@@ -1,0 +1,13 @@
+.main__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+.main__header__tags {
+  display: flex;
+  gap: 1em;
+}

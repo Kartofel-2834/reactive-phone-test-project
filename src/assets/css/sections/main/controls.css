@@ -1,0 +1,7 @@
+.main__controls {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  gap: 0.25em;
+  margin-top: 1.5em;
+}
